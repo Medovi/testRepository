@@ -10,6 +10,7 @@ public class Message {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
+    //aaaaaaaaaaaaaaaaaaaaaaaahahahhhh
 
     private String text;
     private String tag;
