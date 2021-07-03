@@ -52,6 +52,5 @@ public class MainController {
         model.put("messages", messages);
         model.put("filter", "");
         return "main";
-        //фильтр добавь шо ле
     }
 }
