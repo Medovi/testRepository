@@ -2,7 +2,7 @@
 
 <@c.page>
     List of users
-    <input type="hidden" name="_csrf" value="${_csrf.token}" />
+
     <table>
         <thead>
         <tr>

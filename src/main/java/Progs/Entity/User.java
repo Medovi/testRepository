@@ -24,7 +24,7 @@ public class User implements UserDetails {
 
     public boolean isAdmin(){
         return roles.contains(Role.ADMIN);
-    }//dfsaf
+    }
 
     public Long getId() {
         return id;
