@@ -2,7 +2,7 @@ package Progs.controller;
 
 import Progs.Entity.Role;
 import Progs.Entity.User;
-import Progs.Repository.UserRepo;
+import Progs.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,14 +14,14 @@ import java.util.Map;
 @Controller
 public class RegistrationController {
     @Autowired
-    private UserRepo userRepo;
+    private UserRepository userRepository;
     @GetMapping("/registration")
     public String registration(){
         return "registration";
     }
     @PostMapping ("/registration")
     public String adddUser(User user, Map<String, Object> model){
-        User userFromDb = userRepo.findByUsername(user.getUsername());
+        User userFromDb = userRepository.findByUsername(user.getUsername());
 
         if (userFromDb != null) {
             model.put("message", "User exists!");
@@ -29,7 +29,7 @@ public class RegistrationController {
         }
         user.setActive(true);
         user.setRoles(Collections.singleton(Role.USER));
-        userRepo.save(user);
+        userRepository.save(user);
         return "redirect:/login";
     }
 }
