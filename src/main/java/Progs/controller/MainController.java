@@ -50,6 +50,7 @@ public class MainController {
         messageRepository.save(message);
         Iterable<Message> messages = messageRepository.findAll();
         model.put("messages", messages);
+        model.put("filter", "");
         return "main";
     }
 }
