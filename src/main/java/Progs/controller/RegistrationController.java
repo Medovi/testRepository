@@ -20,7 +20,7 @@ public class RegistrationController {
         return "registration";
     }
     @PostMapping ("/registration")
-    public String adddUser(User user, Map<String, Object> model){
+    public String addUser(User user, Map<String, Object> model){
         User userFromDb = userRepository.findByUsername(user.getUsername());
 
         if (userFromDb != null) {
