@@ -60,8 +60,8 @@ public class UserService implements UserDetailsService {
     private void sendMessage(User user) {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
-                    "Hello, %s! \n" +
-                            "Welcome to Sweater. Please, visit next link: http://localhost:8080/activate/%s",
+                    "Здравствуйте!, %s! \n" +
+                            "Спешим вас обрадовать, вы успешно зарегистрировались на сайте SarFood enjoy! Для успешного входа нужно перейти последующей ссылке: http://localhost:8080/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
             );

@@ -1,3 +1,9 @@
 body{
     color: #113;
 }
+
+.wrap_images img
+{
+    width: 100%;
+    height: auto;
+}

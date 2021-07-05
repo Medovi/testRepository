@@ -1,7 +1,7 @@
 <#import "parts/common.ftl" as c>
 <@c.page>
-<h5>Hello, user</h5>
-    <div>This is a clone</div>
+<h5>Привет :)</h5>
+    <div>Добро пожаловать на сайт SarFood enjoy</div>
 
-<a href="/main">Main page</a>
+<a href="/main">Главная страница</a>
 </@c.page>
