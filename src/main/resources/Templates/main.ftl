@@ -1,5 +1,5 @@
 <#import "parts/common.ftl" as c>
-
+<#include "parts/security.ftl">
 <@c.page>
     <div class="form-row">
         <div class="form-group col-md-6">
@@ -9,9 +9,11 @@
             </form>
         </div>
     </div>
+    <#if isAdmin>
     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
         Message editor
     </a>
-<#include "parts/messageEdit.ftl"/>
+    </#if>
+    <#include "parts/messageEdit.ftl"/>
     <#include "parts/messageList.ftl"/>
 </@c.page>
