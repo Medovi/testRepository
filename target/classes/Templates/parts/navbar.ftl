@@ -11,11 +11,11 @@
         <ul class="navbar-nav mr-auto">
             <#if user??>
             <li class="nav-item">
-                <a class="nav-link" href="/main">Еда</a>
+                <a class="nav-link" href="/main">Блюда</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/user-messages/${currentUserId}">My messages</a>
-            </li>
+<#--            <li class="nav-item">-->
+<#--                <a class="nav-link" href="/user-messages/${currentUserId}"></a>-->
+<#--            </li>-->
             </#if>
             <#if isAdmin>
                 <li class="nav-item">

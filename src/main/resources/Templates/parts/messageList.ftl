@@ -4,7 +4,7 @@
     <#list messages as message>
         <div class="card my-3">
             <#if message.filename??>
-                <img src="/img/${message.filename}" class="card-img-top">
+                <img src="/img/${message.filename}" class="card-img-top" style="width: 354px; height: 350px">
             </#if>
             <div class="m-2">
                 <strong>${message.tag}</strong>

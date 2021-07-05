@@ -4,14 +4,14 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <form method="get" action="/main" class="form-inline">
-                <input type="text" name="filter" class="form-control" value="${filter?ifExists}" placeholder="Search by tag">
-                <button type="submit" class="btn btn-primary ml-2">Search</button>
+                <input type="text" name="filter" class="form-control" value="${filter?ifExists}" placeholder="Поиск по категориям">
+                <button type="submit" class="btn btn-primary ml-2">Поиск</button>
             </form>
         </div>
     </div>
     <#if isAdmin>
     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Message editor
+        Добавить блюдо
     </a>
     </#if>
     <#include "parts/messageEdit.ftl"/>
