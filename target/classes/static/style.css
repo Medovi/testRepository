@@ -2,6 +2,10 @@ body{
     color: #113;
 }
 
+.clr{
+    background-color: #dddddd;
+}
+
 .wrap_images img
 {
     width: 100%;

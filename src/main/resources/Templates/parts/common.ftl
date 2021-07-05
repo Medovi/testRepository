@@ -1,6 +1,6 @@
 <#macro page>
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" class="clr">
     <head>
         <meta charset="UTF-8">
         <title>Product</title>
@@ -12,9 +12,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <script src="https://www.google.com/recaptcha/api.js"></script>
     </head>
-    <body>
+    <body class="clr">
     <#include "navbar.ftl">
-    <div class="container mt-5">
+    <div class="container mt-5 p-3 mb-2 bg-light text-dark">
         <#nested>
     </div>
     <!-- Optional JavaScript -->
